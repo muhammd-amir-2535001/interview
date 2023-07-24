@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="arr.js"></script>
+</head>
+<body>
+    <div>
+    <!---->
+    <div onclick="console.log('first div')">
+        <div onclick="console.log('second')">
+            <button onclick="console.log('button')">
+            Click!
+            </button>
+
+        </div>
+
+    </div>
+    </div>
+    <!--
+  <h1>Welcome to my website!</h1>
+  <p>This is my landing page.</p>
+  <p>Click here to learn more about me.</p>
+  <p>Click here to see my work.</p>
+  <p>Click here to contact me.</p>
+    output:
+     button
+     second
+     first div
+
+-->
+</body>
+<script>
+    // 1.)
+    // let a = [];
+    // let b = [];
+    // console.log(a==b);
+    // console.log(a===b);
+    // output is= false
+    //output is = false
+
+</script>
+<script>
+    //2.)
+    // let a = [];
+    // let b = a;
+    // console.warn(a == b);
+    // console.warn(a === b);
+    // output is ==true
+    // output id ===true
+</script>
+<script>
+    //3.)
+    // let a = [20];
+    // let b = [20];
+    // console.log(a[0]==b[0]);
+    // console.log(a[0]===b[0]);
+    // output is ==true
+    // output is ===true
+    // thatwhy just cheak element;
+</script>
+<script>
+    // 4.)
+    // let x = ["10"];
+    // let y = [10];
+    // console.log(x[0]==y[0]);
+    // console.log(x[0]===y[0]);
+    // console.log(x[0]=y[0]);
+    // output is == true
+    // output is ===false
+    // output is = 10
+</script>
+<script>
+    /*let z=[1,2,3,4,5,6,7,8,9];
+    let b = {
+        name:'amir',
+    }
+    console.log(...z);
+   // output is ...z=1,2,3,4,5,6,7,8,9
+*/
+</script>
+<script>
+    //6.)
+    // let l = "love";
+    // let jan = 2;
+    // let f = l/jan;
+    // console.log(f);
+    //output is f = NaN
+    //console.log(typeof(NaN));
+    //output of  NaN = number
+
+</script>
+<script>
+    //7.)
+   //let date = 10- -10;
+   //console.log(date);
+   //let g = 10 +15;
+   //console.log(g);
+   //output is =20
+   // -,- = +
+</script>
+<script>
+    // //8.)
+    // const set = new Set([1,1,2,2,3,3,3,4,4,4
+    // ,4,5,5,5,5,6,6,6,6,7,7,7]);
+    // console.log(set);
+    // //output is set = 1,2,3,4,5,6,7
+    // //doplicete is not allowe
+</script>
+<script>
+       // 9.)
+      //let data = {name:"amir"};
+     //console.log(delete data.name);
+   //output is date= true
+
+</script>
+<script>
+    //10.)
+    // const data = {nmae:"lalkhan"}
+    // console.log(delete data);
+    // data output is false
+    // we cannot delete all
+</script>
+<script>
+    //11.)
+   //  const data = ["ali",'amir','lalkhan'];
+   //  const [z,x,e] =data;
+   //  console.log(z,x);
+    // output is ali amir
+    // or 
+    // const data = ["ali",'amir','lalkhan'];
+    // const [,x] =data;
+    // console.log(x);
+    // //output is  amir
+    //or
+    // const data = ["ali",'amir','lalkhan'];
+    // const [,,x] =data;
+    // console.log(x);
+    // //output is  lalkhan
+</script>
+<script>
+//12.)
+// how to get name property without .operator
+//    const data = {name:"Amir",age:24,skill:"js"};
+//    const {age}=data;
+//    console.log(age);
+//    const {name}=data;
+//    console.log(name);
+//    const {skill}=data;
+//    console.log(skill);
+//    //out put 24 ,Amir,js
+</script>
+<script>
+//13.)
+// let data ={name:"Amir",age:24,skill:"js"};
+// let info={city:"karachi",mail:"lalkhan263520"}
+// data ={...data,...info}
+// console.log(data);
+</script>
+<script>
+    //14.)
+    // let data ={name:"Amir",age:24,skill:"js"};
+    // let info ={city:"karachi"};
+    // data = {data,...info};
+    // console.log(data);
+    //output
+    //city:"karachi" 
+    //name: 'Amir', age: 24,skill:"js";
+
+</script>
+<script>
+//15.)
+//const name = 'amir';
+//console.log(name());
+//output is
+// error: name is not a function
+</script>
+<script>
+    //16.)
+    // const result = false || {} || null;
+    // console.log(result);
+    // output result = {}
+</script>
+<script>
+    //17.)
+    // const result = false || null || '';
+    //  console.log(result);
+    // output result = ''
+    
+</script>
+<script>
+//18.)
+//    const result = null || 0 || true;
+//    console.log(result); 
+</script>
+<script>
+// 19.)
+//console.log(Promise.resolve(5));
+//output:{<fulfilled>: 5}
+</script>
+<script>
+    //20.)
+    // json.parse();
+    // what is method will do
+    //   A: parses JSON to javascript value 
+    // B: parses a javascript object to JSON
+    // C: parses any javascript valu to JSON
+    // D: parses JSON to a javascript object only
+
+</script>
+<script>
+    //21.)
+    // var name ="amir";
+    // function getname(){
+    // console.log(name)
+    // let name="lalkhan";
+    // }
+    // getname();
+    //Error: Cannot access 'name' 
+    //before initialization
+</script>
+<script>
+//22.)
+// let name = "amir"
+// function getname(){
+// console.log(name);
+// }
+// getname();
+// out put is Amir 
+// let come inside but
+ //cannot come outside
+ </script>
+ <script>
+   //23.)
+   //console.log((x => x)('i love'));
+   //console.log(` ${(x =>x)('i love')} toprogram`);
+   //output
+   // i love
+   //i love programe
+ </script>
+ <script>
+    //25.)
+    //OUTPUT should be 6 
+    // function sumValues(x,y,z){
+    // return x+y+z;
+    // }
+    // console.log(sumValues(...[1,2,3]));
+    //A:sumValues([...1,2,3])
+    //B:sumValues([...[1,2,3]])
+    //C:sumValues(...[1,2,3])
+    //D:sumValues([1,2,3])
+ </script>
+ <script>
+    //26.)
+    // const name1 = 'code stop by stop';
+    // console.log(!typeof name1);
+    // console.log(!typeof name1);
+   // OUTPUT: false;false
+                  //OR
+    // const name = 'code stop by stop';
+    // console.log(!typeof name ==='object');
+    // console.log(!typeof name ==='string');
+    // OUTPUT: false;false;
+                //OR
+                // console.log(!typeof name ===false);  
+                // OUTPUT:true       
+ </script>
+ <script>
+    //27.)
+    // const name = "subscribe";
+    // const age = 21;
+    // console.log(isNaN(name));
+    // console.log(isNaN(age));
+    // OUTPUT: true;
+    // OUTPUT:false;
+
+ </script>
+ <script>
+    //28.)
+    // let person = {name:"Amir"};
+    // what can modify person object
+    // Object.seal(person);
+    // person.name="lalkhan"
+    // console.log(person);
+    // OUTPUT:LALKHAN
+    // // we can not modify value
+ </script>
+ <script>
+    //29.)
+    //remove first element
+    // let data = [2,3,4,5];
+    // data.shift()
+    // console.log(data);
+    //output: 3,4,5
+ </script>
+ <script>
+   //30.)
+   //remove last element
+   //let data = [2,3,4,5];
+   //data.pop()
+   //console.log(data);
+  //output: 2,3,4,
+ </script>
+ <script>
+    //31.)
+    // check any value is odd or event
+    //let a=31;
+    //console.log(a%2)
+    //OUTPUT=1
+     ////OR
+    // if (a%2==1){
+    //     console.log("the value is even");
+    // }else{
+    //     console.log("the value is odd");
+    // }
+
+ </script>
+ <script>
+    //33.)
+    // let data ={
+    //  name:"amir"
+    // }
+    // delete data.name;
+    // console.log(data);
+    // output:{}
+    //      OR
+    // let data ={
+    //     name:"amir",
+    //     age:12
+    // }
+    // delete data.name;
+    // console.log(data);
+    // output:age: 12
+ </script>
+ <script>
+    //34.)
+    //convert data to boolean false solve
+    //let data ="true";
+    // console.log( typeof data);
+    // output:String
+    //console.log(!data);
+    //output:false;
+    //console.log( typeof !data);
+    //output:boolean;
+ </script> 
+ <script>
+    //35.)
+    //convert data to boolean false value
+    //let data ="true";
+    //console.log(!data);
+    //output : false;
+ </script>
+ <script>
+    //36.)
+    // let a = ["muhammad","lalkhan","amir"];
+    // delete a[1];
+    // console.log(a);
+    // output:['muhammad', empty, 'amir']
+ </script>
+ <script>
+    //37.) 
+    // let a = ["muhammad","lalkhan","amir"];
+    // delete a[1];
+    //  console.log(a.length);
+    // output:3
+ </script>
+ <script>
+    //38.)
+    //merge two arr
+    // let a = [1,2,3,4,5];
+    // var b = [6,7,8,9,10];
+    // const c = [...a,...b];
+    // console.log(c);
+    // output:[1, 2, 3, 4, 5, 
+    //           6, 7, 8, 9, 10]
+ </script>
+ <script>
+    //39.)
+    // let a = [1,2,3,4];
+    // let b = [4,5,6,7];
+    // let c = [...a,...b];
+    // console.log(c);
+    // outout: [1, 2, 3, 4, 4, 5, 6, 7]
+ </script>
+ <script>
+    //40.)
+    // let a = { 1:"A",2:"B",3:"C"};
+    // let +9b = {3:"d",4:"e",5:"f"};
+    // let c = {...a,...b};
+    // console.log(c);
+    // output:{1: 'A', 2: 'B', 3: 'd', 4: 'e', 5: 'f'}
+ </script>
+ <script>
+    //41.)
+    // let8 a = 3**3;
+    // 887console.log(a);
+    // output=27
+    // OR
+    //let a = 3*3;
+    //console.log(a);
+    // output=9
+
+ </script>
+ <script>
+    //42.)
+    // let a = 2;
+    // setTimeout(()=>{
+    //     console.log(a);
+    // },0)
+    // a=100;
+    output: 100
+ </script>
+ <script>
+    //43.)
+    // let a = 40;
+    // let A = 50;
+    // console.log(A);
+    //output:50
+ </script>
+ <script>
+    //44.)
+     // let a = 40;
+    // let A10 = 50;
+    // console.log(A);
+    //output:50
+ </script>
+ <script>
+    //45.)
+     // let a = 40;
+    // let 10A = 50;
+    // console.log(A);
+    //output:Error
+ </script>
+ <script>
+    //45.)
+    //let a = "like";
+    //let b = "like";
+    //console.log(a==b);
+    //output:true
+    // or
+    //let a = "like";
+    //let b = `like`;
+    //console.log(a==b);
+    //output:true
+ </script>
+ <script>
+    //46.)
+    // let a = 1;
+     //let b = 2;
+    // console.log(--b ===a);
+    // console.log(--b ==a);
+    // output:true
+    // output:false
+
+ </script>
+ <script>
+//47)
+// let a = 1;
+// let b = 1;
+// let c = 2;
+// console.log(a === b === --c);
+//output is false
+//console.log(true===--c);
+//output is = false
+ </script>
+ <script>
+   //48.)
+   //console.log(3*3);
+   //output is = 9
+   //console.log(3**3);
+   //output:27
+   //console.log(3***3); 
+   //output:SyntaxError: Unexpected token '*'
+
+//  </script>
+  <script>
+//49.)
+//console.log(a);
+//var a;
+//output:undefined
+//  </script>
+  <script>
+//50.)
+//console.log(b);
+//output:Error: b is not defined
+
+ </script>
+ <script>
+    //51.)
+    // console.log([[[[[]]]]]);
+    // output:0:[Array(1)]length: 1
+ </script>
+ <script>
+    //52.)
+    // how to find OS name
+    // navigator.platform
+    //  'Win32'
+ </script>
+ <script>
+    //53.)
+    // let for =100;
+    // console.log(for);
+    // output:SyntaxError: Unexpected token 'for'
+    // for is keyword
+ </script>
+ <script>
+    //54.) 
+    //function fruit(){
+    //console.log(name);
+    //console.log(price);
+
+    //var name = "apple";
+    //let price = 20;
+    // }
+    // fruit();
+    // //output:for var name=undefined
+    // //output:for let price=ReferenceError: Cannot access 'price' before initialization
+ </script>
+ <script>
+   // 55.)
+//    for(var i=0; i<3;i++){
+//     setTimeout(()=>console.log(i),1);
+//    }
+//    output:3,3,3;
+ </script>
+ <script>
+   // 56.)
+       //for(let i=0; i<3;i++){
+      //setTimeout(()=>console.log(i),1);
+      // }
+     //output:0,1,2;
+
+ </script>
+ <script>
+//    let arr =[1,2,3,4,,5,6];
+//    //target 9
+//    function target()
+//    console.log
+//  </script>
+//  <script>
+    //57.)
+    // console.log(+true);
+    // console.log(typeof +true)
+    // output:1
+    // output:Number
+ </script>
+ <script>
+    //58.)
+    // console.log(+false);
+    // console.log(typeof +false)
+    // output:0
+    // output:Number
+ </script>
+ <script>
+    //59.)
+    // console.log(!'amir');
+    // console.log(typeof("amir"));
+    // output:false
+    //        :string
+ </script>
+ <script>
+    //60.)
+    // let data ="size";
+    // const bird = {
+    //     size:'size',
+    //};
+    // console.log(bird[data]);
+    // console.log(bird["size"]);
+    // console.log(bird.size);
+    // console.log(bird.data);
+    // output
+    // :size
+    // : size
+    // : size
+    // : undefined
+ </script>
+ <script>
+    // //61.)
+    // let c={name:"amir"};
+    // let d;
+
+    // d=c;
+    // c.name ="lalkhan";
+    // console.log(d.name);
+    // output:lalkhan
+
+ </script>
+ <script>
+    //62.)
+    // var x1;
+    // var x1 = 10;
+    // console.log(x1);
+    // output:10
+    //63.)
+    //or
+    //let x1;
+    //let x1 = 10;
+    //console.log(x1);
+    //output:SyntaxError: Identifier 'x1'
+    // has already been declared 
+    //or
+    //64.)
+    // var x1;
+    // let x1 = 10;
+    // console.log(x1);
+    // output:error
+   // or
+   //65.)
+    // let x1;
+    // var x1 = 10;
+    // console.log(x1);
+    // output:err
+
+ </script>
+ <script>
+//66.)
+// let a = 3;
+// let b =new Number(3);
+// console.log(typeof(b));
+// //output:object
+// console.log(a==b);
+// console.log(a===b);
+// output:true
+// output:false
+ </script>
+ <script>
+    //67.)
+    //let name;
+    //name ={};
+    // console.log(name);
+    //output:{}
+    // console.log(name);
+    // output:{}
+ </script>
+ <script>
+    //68.)
+    // function fruit(){
+    //     console.log("mango");
+
+    // }
+    // fruit.name = "apple";
+    // fruit();
+    // output:mango
+ </script>
+ <script>
+ //69.)
+//  function sum(){
+//     returna+b;
+//  }
+//  console.log(1,"2");
+//  output;12
+ </script>
+ <script>
+   //70.)
+//    let Number= 0;
+//    console.log(Number++)
+//    console.log(++Number)
+//    console.log(Number);
+//    output: 2
+//    output: 2
+//    output: 0 
+ </script>
+ <script>
+    //71.)
+    // function getAge(...args){
+    //     console.log(args);
+    // }
+    // getAge(21);
+    // output:[21] 0: 21 length:1
+    //72.)
+    // function getAge(...args){
+    //     console.log(typeof args);
+    // }
+    // getAge(21);
+    // output = object
+ </script>
+ <script>
+//    //  73.)
+//    function getAge(){
+//     'use strict';
+//     age = 21;
+//     console.log(age);
+//    }
+//    getAge(age)
+//    output :ReferenceError: age is not defined
+ </script>
+ <script>
+//     //74)
+//     function getAge(){
+//     age = 21;
+//     console.log(age);
+//    }
+//    getAge(age);
+//    output:ReferenceError: age is not defined
+ </script>
+ <script>
+    //75.)
+    // const sum = eval("10*10+5")
+    // console.log(sum);
+    // output=105
+
+ </script>
+ <script>
+    //76.)
+    37439
+    // function sum(){
+    //   let  arr=[1,2,3]
+
+    //   for(let i=0; i<=arr.lenght; i++){
+    //     return ;
+    //   }
+    // }
+    // sum()
+    //console.log(sum)
+ </script>
+ <script>
+    //            HR\
+    // 1.)
+
+    //Given an array of integers, find the sum of its elements.
+//     function sumOfArrayElements(arr) {
+//   let total = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     total += arr[i];
+//   }
+//   return total;
+// }
+
+// // Example usage:
+// const ar = [1, 2, 3];
+// const result = sumOfArrayElements(ar);
+// console.log(result);
+//  // Output: 6
+       //HR
+//2.)Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.
+
+// The rating for Alice's challenge is the triplet a = (a[0], a[1], a[2]), and the rating for Bob's challenge is the triplet b = (b[0], b[1], b[2]).
+
+// The task is to find their comparison points by comparing a[0] with b[0], a[1] with b[1], and a[2] with b[2].
+
+// If a[i] > b[i], then Alice is awarded 1 point.
+// If a[i] < b[i], then Bob is awarded 1 point.
+// If a[i] = b[i], then neither person receives a point.
+// Comparison points is the total points a person earned.
+
+// Given a and b, determine their respective comparison points.
+//  function compareTriplets(a, b) {
+//   let alicePoints = 0;
+//   let bobPoints = 0;
+
+//   for (let i = 0; i < a.length; i++) {
+//     if (a[i] > b[i]) {
+//       alicePoints++;
+//     } else if (a[i] < b[i]) {
+//       bobPoints++;
+//     }
+//   }
+
+//   return [alicePoints, bobPoints];
+// }
+
+// // Example usage:
+// const a = [5, 6, 7];
+// const b = [3, 6, 10];
+// const result = compareTriplets(a, b);
+// console.log(result); // Output: [2, 1]
+// ///amir2535001
+// function calculate() {
+//   // Get the values of the two operands.
+//   const firstOperand = Number(document.getElementById("first-operand").value);
+//   const secondOperand = Number(document.getElementById("second-operand").value);
+//   // Get the operator.
+//   const operator = document.getElementById("operator").value;
+//   // Calculate the result.
+//   let result;
+//   switch (operator) {
+//     case "+":
+//       result = firstOperand + secondOperand;
+//       break;
+//     case "-":
+//       result = firstOperand - secondOperand;
+//       break;
+//     case "*":
+//       result = firstOperand * secondOperand;
+//       break;
+//     case "/":
+//       result = firstOperand / secondOperand;
+//       break;
+    
+//       default:
+//       result = NaN;
+//   }
+//   // Display the result.
+//   document.getElementById("result").innerHTML = result;
+// }
+ </script>
+ <script>
+//     //         HR
+//     //3.)In this challenge, 
+//     //you are required to calculate
+//     // and print the sum of the elements in an array,
+//     // keeping in mind that some of those integers may be quite large.
+//     function aVeryBigSum(ar) {
+//   let sum = BigInt(0);
+//   for (let i = 0; i < ar.length; i++) {
+//     sum += BigInt(ar[i]);
+//   }
+//   return sum;
+// }
+
+// // Example usage:
+// const ar = [1000000001, 1000000002, 1000000003];
+// const result = aVeryBigSum(ar);
+// console.log(result.toString()); // Output: 3000000006
+
+ </script>
+ <script>
+  //  81.)
+//   const obj ={1:'a',2:'b',3:'c'};
+//   console.log(obj.hasOwnProperty('1'));
+//   console.log(obj.hasOwnProperty(1));
+//   output:true;
+//   output:true;
+ </script>
+ <script>
+   // 81.)
+//    const onj = {
+//     a:"one",b:"two",a:'repeat'
+//    }
+//    console.log(onj);
+//    output:{a: 'repeat', b: 'two'}
+ </script>
+ <script>
+    //82.)
+    // for(var i =0;i<5;i++)
+    // {
+    //     if(i==3) continue;
+    //     console.log(i);
+    // }
+    // output:0,1,2,4
+</script>
+ <script>
+    //83.)
+//     const foo = ()=>console.log("first");
+//     const bar = ()=>console.log("second");
+//     const baz = ()=>console.log("third");
+//     baz();
+//     foo();
+//     bar();
+//     output:third
+//     output:first
+//     output:second
+ </script>
+ <script>
+ //   84.)  i don't kmow
+ //const person = { name:'amir'};
+ //function saygi(age){
+  //  return '$(this.name) is $(age)';
+ //}
+ //console.log(saygi.call(person,21));
+
+// console.log(saygi.bind(person,21))
+// // 85.)
+// const number =[1,2,3,];
+// //number[9]=number;
+// console.log(number);
+ </script>
+ <script>
+    
+ </script>
+</html>
